@@ -12,10 +12,10 @@ todoForm.addEventListener('submit', (event) =>{
     const newTodoItem = document.createElement('li');
 
     const completeButton = document.createElement('button')
-    completeButton.textContent = 'complete';
+    completeButton.textContent = 'Complete';
 
     const deleteButton = document.createElement('button')
-    deleteButton.textContent = 'delete';
+    deleteButton.textContent = 'Delete';
 
     deleteButton.addEventListener('click', () => {
         todoList.removeChild(newTodoItem);
