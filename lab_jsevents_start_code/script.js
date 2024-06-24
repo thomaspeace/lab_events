@@ -15,6 +15,6 @@ todoForm.addEventListener('submit', (event) =>{
 })
 
 const deleteButton = document.createElement('button')
-deleteButton.addEventListener('click', () => {
-    console.log("asdasdas");;
+todoList.addEventListener('click', () => {
+    todoList.removeChild(this.todoList);
 });
