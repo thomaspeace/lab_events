@@ -2,6 +2,7 @@
 const todoForm = document.querySelector("#todo-form");
 const todoInput = document.querySelector('#new-todo');
 const todoList = document.querySelector('#list');
+const showDateButton = document.querySelector('#show-date');
 
 
 //logic
@@ -21,5 +22,11 @@ todoForm.addEventListener('submit', (event) =>{
     todoList.appendChild(deleteButton);
 });
 
+showDateButton.addEventListener('click', () =>{
+    const currentDate = new Date().toLocaleDateString();
+    const currentTime = new Date().toLocaleTimeString();
+    
+    document.getElementById("date").innerHTML = `${currentTime} , ${currentDate}`;
+});
 
 
